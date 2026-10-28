@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>පැරණි ප්‍රශ්න පත්‍ර පුහුණුව | 6–11 ශ්‍රේණි</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@400;600;800&family=Caveat:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<section id="home">
+  <div class="top"><h1>පැරණි ප්‍රශ්න පත්‍ර පුහුණුව</h1><p>6 සිට 11 ශ්‍රේණි දක්වා · පිළිතුරු දී අවසන් වූ විගස ලකුණු බලන්න</p></div>
+  <h2>ඔබේ ශ්‍රේණිය තෝරන්න</h2>
+  <div class="grades" id="grades"></div>
+  <h2>විෂයය තෝරන්න</h2>
+  <div class="subs" id="subs"></div>
+  <button class="go" id="start" disabled>ප්‍රශ්න පත්‍රය අරඹන්න</button>
+</section>
+
+<section id="quiz" class="hide">
+  <div class="bar"><span id="qtitle"></span><span id="timer">00:00</span></div>
+  <div class="prog"><i id="pbar"></i></div>
+  <div class="q"><h3 id="qtext"></h3><div id="qans"></div></div>
+  <div class="nav"><button class="btn" id="prev">පෙර ප්‍රශ්නය</button><button class="btn p" id="next">ඊළඟ ප්‍රශ්නය</button></div>
+</section>
+
+<section id="result" class="hide res">
+  <div class="top" style="text-align:left"><h1 id="rtitle">ප්‍රතිඵල</h1><p id="rsub"></p></div>
+  <div class="mark">
+    <svg viewBox="0 0 200 200" aria-hidden="true"><ellipse cx="100" cy="100" rx="92" ry="84" fill="none" stroke="var(--pen)" stroke-width="6" stroke-linecap="round" stroke-dasharray="560" stroke-dashoffset="560" transform="rotate(-8 100 100)" id="circ"/></svg>
+    <span id="score"></span>
+  </div>
+  <div class="pct" id="pct"></div>
+  <p class="msg" id="msg"></p>
+  <div class="stats"><div class="stat"><b id="sOk">0</b><small>නිවැරදි</small></div><div class="stat"><b id="sNo">0</b><small>වැරදි</small></div><div class="stat"><b id="sTime">0</b><small>කාලය</small></div></div>
+  <button class="go" id="again">නැවත උත්සාහ කරන්න</button>
+  <button class="btn" id="home2" style="margin-top:10px;width:100%">වෙනත් ප්‍රශ්න පත්‍රයක්</button>
+  <h2 style="text-align:left">පිළිතුරු සමාලෝචනය</h2>
+  <div id="review"></div>
+</section>
+<footer>නව නිපැයුම් ප්‍රදර්ශනය · පාසල් ව්‍යාපෘතිය</footer>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
